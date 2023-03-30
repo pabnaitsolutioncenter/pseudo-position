@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        div h1:hover {
+            background-color: wheat;
+            font-size: 50px;
+            font-weight: 800;
+            color: aqua;
+            padding: 20px;
+
+        }
+
+        div h1 {
+            display: inline;
+            margin-left: 20px;
+        }
+       
+
+        div a:visited {
+            background-color: blue;
+        }
+        
+        
+        .you-focus:focus{
+            padding: 10px;
+            background-color: aqua;
+            color: yellowgreen;
+            margin: 10px;
+        }
+       
+        
+        li:nth-child(2n){
+            background-color: tomato;
+            color: aqua;
+        }
+        li:nth-child(2n+1){
+            background-color: blueviolet;
+            color: darkmagenta;
+        }
+        li::before{
+            content: 'Hello ';
+        }
+        li::after{
+            content: ' Ok';
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <li>Child - 1</li>
+        <li>Child - 2</li>
+        <li>Child - 3</li>
+        <li>Child - 4</li>
+        <li>Child - 5</li>
+        <li>Child - 6</li>
+        <li>Child - 7</li>
+        <li>Child - 8</li>
+    </div>
+
+    <div>
+        <h1>Player No-1</h1>
+        <h1>Player No-2</h1>
+        <h1>Player No-3</h1>
+        <h1>Player No-4</h1>
+        <h1>Player No-5</h1>
+    </div>
+
+    <div>
+        <a href="https://www.google.com/">visited Website-1</a>
+        <a href="https://blog.hubspot.com/marketing/best-website-designs-list">visited Website-2</a>
+        <a target="_blank" href="https://www.intechnic.com/blog/top-50-examples-best-responsive-designs/">visited
+            Website-3</a>
+        <a href="https://websitesetup.org/types-of-websites-examples/">visited Website-4</a>
+        <a href="">visited Website-5</a>
+    </div>
+
+    <div>
+        <input class="you-focus" type="text" placeholder="Your Name" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+    </div>
+
+</body>
+
+</html>
